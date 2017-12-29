@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_search_itemrl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6dp"
+    android:minHeight="68dp"
+    android:background="@drawable/item">
+
+    <ImageView
+        android:id="@+id/location_search_item_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/location_image" />
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/location_search_item_nametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/location_search_item_image"
+        android:gravity="center_vertical"
+        android:text="title"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/location_search_item_shortaddresstv"
+        android:layout_below="@id/location_search_item_nametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/location_search_item_image"
+        android:gravity="center_vertical"
+        android:text="subtitle"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+</RelativeLayout>

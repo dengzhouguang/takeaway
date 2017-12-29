@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="312dp"
+    android:background="@color/colorTransparent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/restaurant_detail_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/restaurant_detail_popupwindow">
+
+        <TextView
+            android:id="@+id/restaurant_detail_info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="品尚寿司店"
+            android:textStyle="bold"
+            android:textColor="@color/color_33"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:id="@+id/restaurant_detail_infoll1"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_below="@id/restaurant_detail_info_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/restaurant_detail_info_rating"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="4.4"
+                android:textColor="@color/color_33"
+                android:textSize="15sp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/restaurant_detail_info_sales"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1666"
+                android:textColor="@color/color_33"
+                android:textSize="15sp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/restaurant_detail_info_delivery"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="商家配送"
+                android:textColor="@color/color_33"
+                android:textSize="15sp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/restaurant_detail_info_delivery_money"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0元"
+                android:textColor="@color/color_33"
+                android:textSize="15sp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/restaurant_detail_info_distance"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1.1km"
+                android:textColor="@color/color_33"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/restaurant_detail_infoll2"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@id/restaurant_detail_infoll1"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="评分"
+                android:textColor="@color/color_99"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="月售"
+                android:textColor="@color/color_99"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/restaurant_detail_info_delivery_time"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="约59分钟"
+                android:textColor="@color/color_99"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="配送费"
+                android:textColor="@color/color_99"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="距离"
+                android:textColor="@color/color_99"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/restaurant_detail_announcement"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_below="@id/restaurant_detail_infoll2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="22dp"
+                android:layout_height="1dp"
+                android:background="@drawable/restaurant_detail_gradient" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                android:text="公告"
+                android:textColor="@color/color_99"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="22dp"
+                android:layout_height="1dp"
+                android:background="@drawable/restaurant_detail_gradient2" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurant_detail_announcement"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/restaurant_detail_description"
+                android:maxHeight="98dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="五星好评有反现哦。本店东西现点现做，请提前预定，备注好你的用餐时间，避免高峰期影响你用餐休息。团队配送时间全部配送上楼。。。由于宿管不让送外卖晚上的外卖要下楼自取订单查询15775070275"
+                android:textColor="@color/color_33"
+                android:textSize="13sp" />
+        </ScrollView>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/restaurant_detail_popupinfo_cancelib"
+        android:background="@drawable/restaurant_detail_popup_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/restaurant_detail_rl" />
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/restaurant_detail_shopCart_background"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@color/shop_cart_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/restaurant_detail_shopCartMainrl"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:orientation="horizontal"
+        android:paddingStart="10dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/icon_cart"
+            android:clipChildren="true" />
+
+        <TextView
+            android:id="@+id/restaurant_detail_shopCartNum"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shopcart_num_bg"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/restaurant_detail_totalPricetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/image"
+            android:text="¥0"
+            android:textColor="@color/colorWhite"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/restaurant_detail_noShoptv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/image"
+            android:text="购物车为空"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/restaurant_detail_howMoneyToDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="¥20起送"
+        android:textColor="#999999"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/restaurant_detail_shopCartMain_goToCheckOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#58D178"
+        android:paddingBottom="15dp"
+        android:paddingEnd="25dp"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:text="去结算"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</LinearLayout>

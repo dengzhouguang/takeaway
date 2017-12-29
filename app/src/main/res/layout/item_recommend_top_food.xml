@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/item_recommend_top_foodll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:paddingLeft="3dp"
+        android:id="@+id/item_recommend_top_foodiv"
+        android:src="@mipmap/food_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/item_recommend_top_food_nametv"
+        android:text="香辣鸡腿堡"
+        android:textColor="@color/recommend_text"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="14dp" />
+    <TextView
+        android:text="￥14"
+        android:id="@+id/item_recommend_top_food_moneytv"
+        android:textSize="14sp"
+        android:textColor="@color/recommend_money"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+</LinearLayout>

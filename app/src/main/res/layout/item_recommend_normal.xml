@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_recommend_normalrl"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <TextView
+        android:id="@+id/item_recommend_normal_nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="牛肉汉堡+可乐鸡翅"
+        android:textColor="@color/recommend_text"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/item_recommend_normal_moneytv"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_below="@id/item_recommend_normal_nametv"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:text="￥13"
+        android:textColor="@color/recommend_money"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/item_recommend_normal_salestv"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_alignBaseline="@+id/item_recommend_normal_nametv"
+        android:layout_alignBottom="@+id/item_recommend_normal_nametv"
+        android:layout_alignParentEnd="true"
+        android:text="月售9527份"
+        android:textColor="@color/recommend_text"
+        android:textSize="10sp" />
+</RelativeLayout>

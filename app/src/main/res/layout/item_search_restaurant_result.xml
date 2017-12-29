@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_search_restaurant_result_logoiv"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/exapmle_logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/item_search_restaurant_result_logoiv">
+
+        <TextView
+            android:id="@+id/item_search_restaurant_result_nametv"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="甜园蛋糕"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/item_search_restaurant_result_starll"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_search_restaurant_result_nametv"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:isIndicator="true"
+                android:progressDrawable="@drawable/retingbar_bg"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:rating="2.4"
+                android:id="@+id/item_search_restaurant_result_starrb"
+                android:layout_marginEnd="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:id="@+id/item_search_restaurant_result_startv"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:text="4.6"
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_search_restaurant_result_salestv"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginStart="12dp"
+                android:text="月售9527单"
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_search_restaurant_result_sendrl"
+            android:layout_width="260dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/item_search_restaurant_result_starll"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/item_search_restaurant_result_sendmoneytv"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentStart="true"
+                android:text="￥0元起送 | 免配送费"
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_search_restaurant_result_sendtimetv"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:text="5.2km | 39分钟"
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/item_search_restaurant_result_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/item_search_restaurant_result_sendrl"
+            android:layout_marginTop="10dp"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:id="@+id/item_search_restaurant_result_favourable_contentll"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_search_restaurant_result_view"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/item_search_restaurant_result_favourablerv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/item_search_restaurant_result_favourablell"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_search_restaurant_result_favourabletv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="1dp"
+                    android:text="7个活动"
+                    android:textColor="@color/colorText"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/item_search_restaurant_result_favourableiv"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/more_favourable" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/item_search_restaurant_result_recommendrv"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_search_restaurant_result_favourable_contentll" />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:id="@+id/item_search_restaurant_result_recommend_morell"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/item_search_restaurant_result_recommendrv"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/item_search_restaurant_result_recommend_moretv"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="查看其他2个相关商品"
+                android:textColor="@color/colorText2"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/item_search_restaurant_result_recommend_moreiv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="2dp"
+                android:src="@mipmap/item_search_restaurant_result_recommend_more_default" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

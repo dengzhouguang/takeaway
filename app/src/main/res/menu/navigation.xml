@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_takeaway"
+        android:icon="@drawable/takeaway"
+        android:title="@string/takeaway" />
+
+    <item
+        android:id="@+id/navigation_find"
+        android:icon="@drawable/find"
+        android:title="@string/find" />
+
+    <item
+        android:id="@+id/navigation_order"
+        android:icon="@drawable/order"
+        android:title="@string/order" />
+    <item
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/user"
+        android:title="@string/user" />
+
+</menu>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">外卖</string>
+    <string name="takeaway">外卖</string>
+    <string name="find">发现</string>
+    <string name="order">订单</string>
+    <string name="user">我的</string>
+    <string name="pull_to_refresh_header_hint_normal">下拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="pull_to_refresh_header_hint_loading">正在加载中</string>
+    <string name="pull_to_refresh_header_last_time">最后更新时间 :</string>
+    <string name="pull_to_refresh_refreshing_label">@string/pull_to_refresh_header_hint_loading</string>
+    <string name="transition">transition</string>
+    <string name="no_summary">暂无简介</string>
+    <drawable name="background_white">#ffffff</drawable>
+    <drawable name="background_transparent">#00000000</drawable>
+</resources>

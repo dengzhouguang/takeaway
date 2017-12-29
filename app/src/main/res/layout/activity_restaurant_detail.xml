@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/restaurant_detail_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CustomCollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/collapsing"
+            android:layout_height="250dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorWhite"
+            android:fitsSystemWindows="true"
+            app:layout_collapseMode="parallax"
+            app:layout_collapseParallaxMultiplier="0.3"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ImageView
+                app:layout_collapseMode="parallax"
+                android:id="@+id/restaurant_detail_background"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY"
+                app:layout_collapseParallaxMultiplier="0.7" />
+            <!--android:src="@mipmap/restaurant_detail_toolbar_background_default"-->
+            <LinearLayout
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="52dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/restaurant_detail_infoll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/restaurant_detail_logo"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap" />
+                    <!--android:src="@mipmap/restaurant_detail_logo"-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/restaurant_detail_nametv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:gravity="center"
+                            android:textColor="#ff000000"
+                            android:textSize="21sp" />
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/restaurant_detail_more_info"
+                            android:layout_width="6dp"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="5dp"
+                            android:src="@mipmap/restaurant_detail_more_info" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/restaurant_detail_alltv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textAllCaps="false"
+                        android:textColor="#ff373737"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/restaurant_detail_descriptiontv"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="#ff9f9f9f"
+                        android:textSize="11sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/restaurant_detail_favourablell"
+                    android:visibility="gone"
+                    android:layout_width="312dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/favourable_shape_corner"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="220dp"
+                        android:layout_height="22dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:id="@+id/restaurant_detail_favourable_text_tv"
+                            android:layout_width="wrap_content"
+                            android:paddingStart="1dp"
+                            android:paddingEnd="1dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/restaurant_detail_favourabletv"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="#ff666666"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/restaurant_detail_favourable_sizetv"
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#ff666666"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="6dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@mipmap/more_favourable" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/restaurant_detail_toolbar_background"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY"
+                app:layout_collapseMode="pin"
+                android:src="#00000000"
+                android:layout_width="match_parent"
+                android:layout_height="82dp" />
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/restaurant_detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+                <LinearLayout
+
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/toolbar_linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+
+                        android:id="@+id/restaurant_detail_back"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/restaurant_detail_back" />
+
+                    <LinearLayout
+                        android:id="@+id/restaurant_detail_searchll"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/search_shape_corner"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:src="@mipmap/restaurant_toolbar_search"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp" />
+                        <TextView
+                            android:textColor="#999999"
+                            android:layout_marginStart="5dp"
+                            android:text="想吃什么搜一搜"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/restaurant_detail_cart"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@mipmap/restaurant_detail_cart" />
+
+                    <ImageView
+                        android:id="@+id/restaurant_detail_more"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@mipmap/restaurant_detail_more" />
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CustomCollapsingToolbarLayout>
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:background="@color/white"
+            android:id="@+id/restaurant_detail_magic_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/restaurant_detail_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <include layout="@layout/layout_restaurant_detail_shop_cart" />
+
+</android.support.design.widget.CoordinatorLayout>

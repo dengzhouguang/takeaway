@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/evaluate_shape_corner"
+    android:layout_height="28dp">
+<TextView
+    android:id="@+id/item_evaluate_categorytv"
+    android:gravity="center"
+    android:text="全部(2611)"
+    android:textSize="12sp"
+    android:layout_width="match_parent"
+    android:layout_height="28dp"/>
+</LinearLayout>

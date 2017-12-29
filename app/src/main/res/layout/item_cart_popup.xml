@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="64dp">
+    <TextView
+        android:id="@+id/item_cart_popup_nametv"
+        android:layout_marginStart="16dp"
+        android:text="萝卜焖牛腩饭"
+        android:textColor="@color/color_75"
+        android:textSize="14sp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="20dp" />
+    <TextView
+        android:id="@+id/item_cart_popup_moneytv"
+        android:text="￥20"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:textColor="@color/color_sale"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_marginEnd="16dp"
+        android:layout_width="80dp"
+        android:layout_height="25dp">
+        <ImageView
+            android:id="@+id/item_cart_popup_addiv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_goods_button_add" />
+
+        <TextView
+            android:id="@+id/item_cart_popup_numtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@id/item_cart_popup_addiv"
+            android:text="1"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/item_cart_popup_minuiv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/item_cart_popup_addiv"
+            android:layout_toStartOf="@+id/item_cart_popup_numtv"
+            android:background="@mipmap/icon_goods_button_minus_gray"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</LinearLayout>

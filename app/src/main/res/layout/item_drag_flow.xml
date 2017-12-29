@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginBottom="6dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:text="活在梦里"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_brand_selected"
+        android:gravity="center_vertical"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="6dp"
+        android:textColor="#7f7f7f"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="top|right"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/edit_text_delete_normal" />
+
+</FrameLayout>

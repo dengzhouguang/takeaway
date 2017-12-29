@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/shop_logo"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:src="@mipmap/ic_launcher" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="渔民新村"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <RatingBar
+                android:isIndicator="true"
+                android:progressDrawable="@drawable/retingbar_bg"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:rating="2.4"
+                android:id="@+id/shop_starrb"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+            <TextView
+                android:id="@+id/shop_startv"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:text="5.0"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/shop_sales"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_marginStart="2dp"
+                android:text="月售4596单"
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:text="准时达"
+                android:textColor="#2595FF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_marginTop="1dp"
+                android:id="@+id/zhuansong"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:src="@mipmap/zhuansong"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp">
+
+            <TextView
+                android:id="@+id/shop_sendmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_alignParentStart="true"
+                android:text="配送费5￥"
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/shop_timeanddistance"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_alignParentEnd="true"
+                android:text="25km  |  30分钟"
+                android:textColor="@color/colorText2"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/shop_favourableiv"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@mipmap/shou" />
+
+            <TextView
+                android:id="@+id/shop_favourabletv"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:text="新用户下单立减17元"
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/shop_favourable2iv"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@mipmap/jian" />
+
+            <TextView
+                android:id="@+id/shop_favourable2tv"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:text="满25减13、满30减15"
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

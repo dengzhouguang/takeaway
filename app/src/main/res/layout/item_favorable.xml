@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="16dp">
+    <ImageView
+        android:layout_marginTop="1dp"
+        android:src="@mipmap/shou"
+        android:id="@+id/restaurant_detail_favourableiv"
+        android:layout_width="14dp"
+        android:layout_height="14dp" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/restaurant_detail_favourabletv"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginLeft="5dp"
+        android:text="新用户下单立减17元"
+        android:textColor="@color/colorText"
+        android:textSize="12sp" />
+</LinearLayout>

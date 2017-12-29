@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_evaluate_detail_anonymousiv"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/anonymous" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_evaluate_detail_anonymousiv"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="9dp"
+        android:layout_toEndOf="@id/item_evaluate_detail_anonymousiv">
+
+        <TextView
+            android:id="@+id/item_evaluate_detail_nametv"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:text="匿名用户"
+            android:textColor="@color/color_48"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/item_evaluate_detail_timetv"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_alignBottom="@id/item_evaluate_detail_nametv"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/item_evaluate_detail_nametv"
+            android:text="2017-12-12"
+            android:textColor="@color/color_bb"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/item_evaluate_detail_servertv"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@id/item_evaluate_detail_nametv"
+            android:text="商家服务:"
+            android:textColor="@color/color_6d"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/item_evaluate_detail_satisfyiv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignBottom="@id/item_evaluate_detail_servertv"
+            android:layout_toEndOf="@id/item_evaluate_detail_servertv"
+            android:src="@mipmap/satisfy" />
+
+        <TextView
+            android:id="@+id/item_evaluate_detail_satisfytv"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@id/item_evaluate_detail_satisfyiv"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/item_evaluate_detail_satisfyiv"
+            android:text="满意"
+            android:textColor="@color/color_satisfy"
+            android:textSize="11sp" />
+
+        <View
+            android:id="@+id/item_evaluate_detail_server_view"
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@id/item_evaluate_detail_satisfytv"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/item_evaluate_detail_satisfytv"
+            android:background="#dddddd" />
+
+        <TextView
+            android:id="@+id/item_evaluate_detail_goodtv"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@id/item_evaluate_detail_server_view"
+            android:layout_toEndOf="@id/item_evaluate_detail_server_view"
+            android:text="商品:"
+            android:textColor="@color/color_6d"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/item_evaluate_detail_good_satisfyiv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignBottom="@id/item_evaluate_detail_goodtv"
+            android:layout_toEndOf="@id/item_evaluate_detail_goodtv"
+            android:src="@mipmap/satisfy" />
+
+        <TextView
+            android:id="@+id/item_evaluate_detail_good_satisfytv"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@id/item_evaluate_detail_good_satisfyiv"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/item_evaluate_detail_good_satisfyiv"
+            android:text="满意"
+            android:textColor="@color/color_satisfy"
+            android:textSize="11sp" />
+
+        <View
+            android:id="@+id/item_evaluate_detail_good_view"
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@id/item_evaluate_detail_good_satisfytv"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/item_evaluate_detail_good_satisfytv"
+            android:background="#dddddd" />
+
+        <TextView
+            android:id="@+id/item_evaluate_detail_deliverytv"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/item_evaluate_detail_good_view"
+            android:layout_toEndOf="@+id/item_evaluate_detail_good_view"
+            android:text="50分钟送达"
+            android:textColor="@color/color_6d"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/item_evaluate_detail_rating_text_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_evaluate_detail_servertv"
+            android:layout_marginTop="6dp"
+            android:text="配送快，主动联系，准时送达，态度很好"
+            android:textColor="@color/color_33"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/item_evaluate_detail_foodlistrv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_evaluate_detail_rating_text_tv"
+            android:layout_marginTop="6dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/item_evaluate_detail_food_imagerv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_evaluate_detail_foodlistrv"
+            android:layout_marginTop="6dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
