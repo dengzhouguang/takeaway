@@ -100,9 +100,7 @@ import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
  * @attr ref android.support.design.R.styleable#CollapsingToolbarLayout_toolbarId
  */
 public class CustomCollapsingToolbarLayout extends FrameLayout {
-
     private static final int DEFAULT_SCRIM_ANIMATION_DURATION = 600;
-
     private boolean mRefreshToolbar = true;
     private int mToolbarId;
     private Toolbar mToolbar;

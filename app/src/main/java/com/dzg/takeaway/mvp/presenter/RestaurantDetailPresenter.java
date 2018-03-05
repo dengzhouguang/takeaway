@@ -1,5 +1,7 @@
 package com.dzg.takeaway.mvp.presenter;
 
+import android.util.Log;
+
 import com.dzg.takeaway.mvp.contract.RestaurantDetailContract;
 import com.dzg.takeaway.mvp.model.Restaurant;
 import com.dzg.takeaway.mvp.model.RestaurantDetail;

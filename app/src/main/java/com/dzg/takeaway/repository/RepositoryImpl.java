@@ -17,13 +17,17 @@ import com.dzg.takeaway.repository.interfaces.DataService;
 import com.dzg.takeaway.repository.interfaces.WeatherService;
 import com.dzg.takeaway.util.FileUtil;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
 import okhttp3.Cache;
+import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -41,7 +45,17 @@ public class RepositoryImpl implements Repository {
                         .cache(new Cache(FileUtil.getHttpCacheDir(App.getInstance()), Constants.HTTP_CACHE_SIZE))
                         .connectTimeout(Constants.HTTP_CONNECT_TIMEOUT, TimeUnit.MILLISECONDS)
                         .readTimeout(Constants.HTTP_READ_TIMEOUT, TimeUnit.MILLISECONDS)
-                        .build();
+                        .addInterceptor(new Interceptor() {
+
+                            @Override
+                            public Response intercept(Chain chain) throws IOException {
+                                //广州地区需要添加x-shard,有些地区不用使用。
+                                Request request = chain.request()
+                               .newBuilder().addHeader("x-shard","shopid=1").build();
+                                return chain.proceed(request);
+                            }
+                        })
+                       .build();
                 mDataService = new Retrofit.Builder()
                         .client(client)
                         .baseUrl("https://www.ele.me")

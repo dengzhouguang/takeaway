@@ -121,9 +121,7 @@ public class GoodsFragment extends BaseFragment implements GoodsAdapter.OnShopCa
             i++;
         }
         mGoodsRv.setHasFixedSize(false);
-//        mGoodsRv.setNestedScrollingEnabled(false);
         mGoodsCateGoryListRv.setHasFixedSize(false);
-//        mGoodsCateGoryListRv.setNestedScrollingEnabled(false);
 
         mGoodscatrgoryEntities.addAll(dataList);
         mGoodsCategoryListAdapter = new GoodsCategoryListAdapter(mGoodscatrgoryEntities, getActivity());

@@ -15,6 +15,8 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
+import static org.greenrobot.eventbus.EventBus.TAG;
+
 /**
  * Created by dengzhouguang on 2017/12/29.
  */
@@ -64,12 +66,13 @@ public class GoodsPresenter implements GoodsContract.Presenter {
 
                     @Override
                     public void onNext(List<RestaurantMenu> restaurantMenus) {
+                        Log.e(TAG, "onNext: size:"+restaurantMenus.size()+"id: "+id);
                         mView.showRestaurantMenu(restaurantMenus);
                     }
 
                     @Override
                     public void onError(Throwable e) {
-                        Log.e("error",e.getMessage());
+                        Log.e("onNext: size: error",e.getMessage());
                     }
 
                     @Override
