@@ -1,7 +1,7 @@
 # DouDou
 这是一款仿写Elm的app，仅完成部分模块
 ## Screenshots
-演示模块:<br>
+模块演示:<br>
 ![](https://github.com/dengzhouguang/takeaway/tree/master/screenShots/1520268491154.gif)<br>
 ![](https://github.com/dengzhouguang/takeaway/tree/master/screenShots/1520268629064.gif)<br>
 ![](https://github.com/dengzhouguang/takeaway/tree/master/screenShots/1520268787423.gif)<br>
