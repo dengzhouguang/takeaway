@@ -1,5 +1,5 @@
-# DouDou
-这是一款仿写Elm的app，仅完成部分模块
+# takeaway
+这是一款仿写Elm UI用于学习的app，仅完成部分模块
 ## Screenshots
 模块演示:<br>
 由于图片较大，可能出现无法播放GIF图的情况，请点击图片链接即可播放。<br>
